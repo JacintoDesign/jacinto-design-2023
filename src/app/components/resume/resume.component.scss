@@ -1,0 +1,465 @@
+@font-face { font-family: open-sans; src: url(../../../assets/fonts/opensans-reg.ttf) }
+@font-face { font-family: saira-ec; src: url(../../../assets/fonts/saira-extra-cond-reg.ttf) }
+
+.resume-wrapper {
+  font-family: 'Segoe UI', sans-serif;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: fit-content;
+  width: 100%;
+  scroll-behavior: smooth;
+  z-index: 5000;
+}
+.background {
+  position: fixed;
+  width: 100%; 
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: white;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 304 304' width='304' height='304'%3E%3Cpath fill='%23000000' fill-opacity='0.04' d='M44.1 224a5 5 0 1 1 0 2H0v-2h44.1zm160 48a5 5 0 1 1 0 2H82v-2h122.1zm57.8-46a5 5 0 1 1 0-2H304v2h-42.1zm0 16a5 5 0 1 1 0-2H304v2h-42.1zm6.2-114a5 5 0 1 1 0 2h-86.2a5 5 0 1 1 0-2h86.2zm-256-48a5 5 0 1 1 0 2H0v-2h12.1zm185.8 34a5 5 0 1 1 0-2h86.2a5 5 0 1 1 0 2h-86.2zM258 12.1a5 5 0 1 1-2 0V0h2v12.1zm-64 208a5 5 0 1 1-2 0v-54.2a5 5 0 1 1 2 0v54.2zm48-198.2V80h62v2h-64V21.9a5 5 0 1 1 2 0zm16 16V64h46v2h-48V37.9a5 5 0 1 1 2 0zm-128 96V208h16v12.1a5 5 0 1 1-2 0V210h-16v-76.1a5 5 0 1 1 2 0zm-5.9-21.9a5 5 0 1 1 0 2H114v48H85.9a5 5 0 1 1 0-2H112v-48h12.1zm-6.2 130a5 5 0 1 1 0-2H176v-74.1a5 5 0 1 1 2 0V242h-60.1zm-16-64a5 5 0 1 1 0-2H114v48h10.1a5 5 0 1 1 0 2H112v-48h-10.1zM66 284.1a5 5 0 1 1-2 0V274H50v30h-2v-32h18v12.1zM236.1 176a5 5 0 1 1 0 2H226v94h48v32h-2v-30h-48v-98h12.1zm25.8-30a5 5 0 1 1 0-2H274v44.1a5 5 0 1 1-2 0V146h-10.1zm-64 96a5 5 0 1 1 0-2H208v-80h16v-14h-42.1a5 5 0 1 1 0-2H226v18h-16v80h-12.1zm86.2-210a5 5 0 1 1 0 2H272V0h2v32h10.1zM98 101.9V146H53.9a5 5 0 1 1 0-2H96v-42.1a5 5 0 1 1 2 0zM53.9 34a5 5 0 1 1 0-2H80V0h2v34H53.9zm60.1 3.9V66H82v64H69.9a5 5 0 1 1 0-2H80V64h32V37.9a5 5 0 1 1 2 0zM101.9 82a5 5 0 1 1 0-2H128V37.9a5 5 0 1 1 2 0V82h-28.1zm16-64a5 5 0 1 1 0-2H146v44.1a5 5 0 1 1-2 0V18h-26.1zm102.2 270a5 5 0 1 1 0 2H98v14h-2v-16h124.1zM242 149.9V160h16v34h-16v62h48v48h-2v-46h-48v-66h16v-30h-16v-12.1a5 5 0 1 1 2 0zM53.9 18a5 5 0 1 1 0-2H64V2H48V0h18v18H53.9zm112 32a5 5 0 1 1 0-2H192V0h50v2h-48v48h-28.1zm-48-48a5 5 0 0 1-9.8-2h2.07a3 3 0 1 0 5.66 0H178v34h-18V21.9a5 5 0 1 1 2 0V32h14V2h-58.1zm0 96a5 5 0 1 1 0-2H137l32-32h39V21.9a5 5 0 1 1 2 0V66h-40.17l-32 32H117.9zm28.1 90.1a5 5 0 1 1-2 0v-76.51L175.59 80H224V21.9a5 5 0 1 1 2 0V82h-49.59L146 112.41v75.69zm16 32a5 5 0 1 1-2 0v-99.51L184.59 96H300.1a5 5 0 0 1 3.9-3.9v2.07a3 3 0 0 0 0 5.66v2.07a5 5 0 0 1-3.9-3.9H185.41L162 121.41v98.69zm-144-64a5 5 0 1 1-2 0v-3.51l48-48V48h32V0h2v50H66v55.41l-48 48v2.69zM50 53.9v43.51l-48 48V208h26.1a5 5 0 1 1 0 2H0v-65.41l48-48V53.9a5 5 0 1 1 2 0zm-16 16V89.41l-34 34v-2.82l32-32V69.9a5 5 0 1 1 2 0zM12.1 32a5 5 0 1 1 0 2H9.41L0 43.41V40.6L8.59 32h3.51zm265.8 18a5 5 0 1 1 0-2h18.69l7.41-7.41v2.82L297.41 50H277.9zm-16 160a5 5 0 1 1 0-2H288v-71.41l16-16v2.82l-14 14V210h-28.1zm-208 32a5 5 0 1 1 0-2H64v-22.59L40.59 194H21.9a5 5 0 1 1 0-2H41.41L66 216.59V242H53.9zm150.2 14a5 5 0 1 1 0 2H96v-56.6L56.6 162H37.9a5 5 0 1 1 0-2h19.5L98 200.6V256h106.1zm-150.2 2a5 5 0 1 1 0-2H80v-46.59L48.59 178H21.9a5 5 0 1 1 0-2H49.41L82 208.59V258H53.9zM34 39.8v1.61L9.41 66H0v-2h8.59L32 40.59V0h2v39.8zM2 300.1a5 5 0 0 1 3.9 3.9H3.83A3 3 0 0 0 0 302.17V256h18v48h-2v-46H2v42.1zM34 241v63h-2v-62H0v-2h34v1zM17 18H0v-2h16V0h2v18h-1zm273-2h14v2h-16V0h2v16zm-32 273v15h-2v-14h-14v14h-2v-16h18v1zM0 92.1A5.02 5.02 0 0 1 6 97a5 5 0 0 1-6 4.9v-2.07a3 3 0 1 0 0-5.66V92.1zM80 272h2v32h-2v-32zm37.9 32h-2.07a3 3 0 0 0-5.66 0h-2.07a5 5 0 0 1 9.8 0zM5.9 0A5.02 5.02 0 0 1 0 5.9V3.83A3 3 0 0 0 3.83 0H5.9zm294.2 0h2.07A3 3 0 0 0 304 3.83V5.9a5 5 0 0 1-3.9-5.9zm3.9 300.1v2.07a3 3 0 0 0-1.83 1.83h-2.07a5 5 0 0 1 3.9-3.9zM97 100a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-48 32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm32 48a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm32-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm32 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16-64a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 96a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-144a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-96 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm96 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16-64a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-32 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM49 36a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-32 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm32 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM33 68a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-48a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 240a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16-64a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16-32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm80-176a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm32 48a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm112 176a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM17 180a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM17 84a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm32 64a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6z'%3E%3C/path%3E%3C/svg%3E");
+}
+section {
+  color: black;
+  margin-left: 20%; 
+  height: fit-content; 
+  min-height: 100vh;
+}
+.title {
+  font-family: saira-ec, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0;
+} 
+.section-title {
+  font-size: 5rem;
+}
+.item-title {
+  font-size: 2.2rem;
+}
+.item-subtitle {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #868e96;
+  margin-top: -5px;
+}
+.sub-title {
+  line-height: 2.5rem;
+  font-weight: 500;
+  font-size: 2rem;
+  margin: 0;
+  color: #868e96;
+}
+.sub-title a {
+  text-decoration: none;
+  color: #D30000;
+}
+.main {
+  font-family: open-sans, sans-serif;
+  font-size: 1.25rem;
+  color: #868e96;
+}
+ul {
+  list-style: none;
+}
+.red {
+  color: #D30000;
+}
+.dark-red {
+  color: #990000;
+}
+.align {
+  text-align: right !important;
+}
+.content-padding {
+  position: relative;
+  padding: 0 5vw 0 1vw;
+}
+
+/* Navigation -------------------------------------------------------- */
+
+.resume-nav {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: fixed;
+  background: #000;
+  width: 18%;
+  height: 100%;
+}
+.resume-nav a {
+  display: block;
+  padding: 10px;
+  margin-right: 40px;
+  color: #777;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.resume-nav a:hover {
+  color: rgb(228, 228, 228);
+}
+.resume-nav a:active, .resume-nav a:focus-within {
+  color: #fff;
+}
+.rounded-img {
+  border-radius: 50%;
+  max-width: 10rem;
+  max-height: 10rem;
+  border: .5rem solid rgba(255,255,255,.2);
+}
+.text-logo {
+  display: none;
+}
+.menu-bars fa-icon {
+  display: none;
+}
+/* About ------------------------------------------------------------------------------------- */
+.about-content {
+  top: 25vh;
+}
+.main-title {
+  line-height: 6rem;
+  font-size: 7rem;
+  font-weight: 700;
+  margin: 0;
+}
+.social-icons {
+  display: flex;
+  margin-top: 3vh;
+  position: absolute;
+  left: -80px;
+}
+.social-icons .icons {
+  position: relative;
+  display: block;
+  flex-direction: row;
+  margin-left: 50px;
+}
+.circle {
+  font-size: 3.5rem;
+}
+.icon {
+  font-size: 2rem;
+  position: absolute;
+  top: 50%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+}
+#linkedin {
+  left: 70%;
+}
+#medium { 
+  left: 70%;
+}
+#instagram {
+  left: 70%;
+}
+#youtube {
+  left: 50%;
+}
+/* Experience ------------------------------------------------------ */
+.experience-content {
+  top: 5vh;
+}
+.item-wrapper {
+  display: flex;
+  margin-bottom: 7vh;
+}
+.item {
+  width: 70%;
+  display: block;
+}
+.item-right {
+  width: 30%;
+  display: block;
+}
+.item-date {
+  margin-top: 8px;
+}
+/* Education -------------------------------------------------------- */
+.education-content {
+  top: 25.5vh;
+}
+/* Skills ----------------------------------------------------------- */
+.skills-content {
+  top: 25.5vh;
+}
+.skill-icons {
+  display: flex;
+  margin-top: 5vh;
+  margin-bottom: 8vh;
+}
+.icons {
+  position: relative;
+  display: block;
+  flex-direction: row;
+  margin-left: 75px;
+}
+.no-margin-left {
+  margin-left: -1vw;
+}
+.skill-icon {
+  font-size: 3.5rem;
+  position: absolute;
+  top: 50%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+}
+#diamond {
+  font-size: 3rem;
+}
+/* Interests -------------------------------------------------------- */
+.interests-content {
+  top: 25.5vh;
+}
+/* Awards ----------------------------------------------------------- */
+.awards-content {
+  top: 25.5vh;
+}
+.list {
+  display: flex;
+  flex-direction: column;
+}
+.list-item {
+  margin-left: 10px;
+}
+.trophy {
+  color: #868e96;
+}
+.indent {
+  display: inline-block;
+  margin: 0 0 0 10px;
+}
+
+/* Responsive Design Media Queries ---------------------------------- */
+
+/* Monitor - No Bookmarks Bar */
+@media screen and (min-width: 1800px) and (min-height: 938px) {
+  .about-content { top: 32vh; }
+  .education-content { top: 30.5vh; }
+  .skills-content { top: 30.5vh; }
+  .interests-content { top: 30.5vh; }
+  .awards-content { top: 30.5vh; }
+}
+
+/* Monitor - Fullscreen */
+@media screen and (min-width: 1800px) and (min-height: 1000px) {
+  .about-content { top: 34vh; }
+  .education-content { top: 32vh; }
+  .skills-content { top: 32vh; }
+  .interests-content { top: 32vh; }
+  .awards-content { top: 32vh; }
+}
+
+/* Laptop - Bookmarks Bar */
+@media screen and (max-width: 1800px) {
+  .about-content { top: 26vh; }
+  .education-content { top: 24vh; }
+  .skills-content { top: 24vh; }
+  .interests-content { top: 24vh; }
+  .awards-content { top: 24vh; }
+}
+
+/* Laptop - No Bookmarks Bar */
+@media screen and (min-width: 1300px) and (max-width: 1799px) and (min-height: 760px) {
+}
+
+/* Laptop - Fullscreen */
+@media screen and (min-width: 1300px) and (max-width: 1799px) and (min-height: 800px) {
+  .about-content { top: 30vh; }
+  .education-content { top: 26vh; }
+  .skills-content { top: 26vh; }
+  .interests-content { top: 26vh; }
+  .awards-content { top: 26vh; }
+}
+
+/* Laptop - 1366 x 768 - Bookmarks Bar */
+@media screen and (width: 1366px) {
+
+}
+
+/* Laptop - 1366 x 768 - No Bookmarks Bar */
+@media screen and (width: 1366px) and (min-height: 720px) {
+}
+
+/* Laptop - 1366 x 768 - Fullscreen */
+@media screen and (width: 1366px) and (min-height: 759px) {
+  .wrapper { overflow-x: hidden; }
+}
+
+@media screen and (min-width: 800px) and (min-height: 901px) and (max-height: 944px) {
+  .about-content { top: 31vh; }
+  .education-content { top: 30vh; }
+  .skills-content { top: 30vh; }
+  .interests-content { top: 30vh; }
+  .awards-content { top: 30vh; }
+}
+@media screen and (min-width: 800px) and (min-height: 780px) and (max-height: 900px) {
+  .about-content { top: 28vh; }
+  .education-content { top: 26.5vh; }
+  .skills-content { top: 26.5vh; }
+  .interests-content { top: 26.5vh; }
+  .awards-content { top: 26.5vh; }
+}
+@media screen and (max-width: 1300px) {
+  .rounded-img { max-width: 7rem; max-height: 7rem; border-width: .25rem; }
+  .about-content { top: 22vh; }
+  .education-content { top: 10vh; }
+  .skills-content { top: 20vh; }
+  .interests-content { top: 20vh; }
+  .awards-content { top: 20vh; }
+}
+/* < Laptop */
+@media screen and (max-width: 1080px) {
+  section {
+    margin-left: 0;
+  }
+  .content-padding {
+    padding: 0 1rem;
+  }
+  /* Navigation --------------------------------------------------------- */
+  .navbar-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    z-index: 100;
+  }
+  .menu-bars fa-icon {
+    display: initial;
+    font-size: 35px;
+    color: white;
+    margin-left: 10px;
+  }
+  .resume-nav {
+    margin-top: 50px;
+    width: 100%;
+    height: 210px;
+    opacity: .95;
+    flex-direction: column;
+    z-index: 20;
+    top: -500px;
+    transition: 0.75s ease;
+  }
+  .resume-nav-expand {
+    top: 0;
+    transition: 0.3s ease;
+  }
+  .resume-nav ul {
+    margin-left: -40px;
+  }
+  .resume-nav a {
+    padding: 5px;
+    margin-right: 5px;
+  }
+  .logo {
+    display: none;
+  }
+  .rounded-img {
+    display: none;
+  }
+  .text-logo {
+    color: white;
+    display: inherit;
+    position: absolute;
+    top: 3px;
+    left: 33%;
+    z-index: 70;
+    font-size: 30px;
+    margin-bottom: 0;
+  }
+  /* About ---------------------------------------------------- */
+  .social-icons {
+    left: -65px;
+  }
+  .social-icons .icons {
+    margin-left: 40px;
+  }
+  .circle {
+    font-size: 3rem;
+  }
+  .icon {
+    font-size: 1.65rem;
+  }
+  #linkedin {
+    left: 60%;
+  }
+  #medium {
+    left: 60%;
+  }
+  #instagram {
+    left: 60%;
+  }
+  #youtube {
+    left: 45%;
+  }
+  /* Skills -------------------------------------------------- */
+  .skill-icons {
+    margin-left: -77px;
+  }
+  .icons {
+    margin-left: 60px;
+  }
+  .skill-icon {
+    font-size: 3rem;
+  }
+  #diamond {
+    font-size: 2.5rem;
+  }
+}
+/* iPad */
+@media screen and (min-width: 650px) and (max-width: 768px) {
+  .text-logo { left: 41%; }
+  .align { text-align: left !important; }
+  .item-wrapper { display: block; margin-bottom: 5vh; }
+  .item { width: 100%; }
+  .item-subtitle { font-size: 1.7rem; }
+  .item-right { width: 100%; }
+}
+
+/* Large Smartphone (Vertical) */
+@media screen and (max-width: 600px) {
+  .about-content { top: 15vh; }
+  .align { text-align: left !important; }
+  /* Experience ---------------------------------------------- */
+  .item-wrapper { display: block; margin-bottom: 5vh; }
+  .item { width: 100%; }
+  .item-subtitle { font-size: 1.7rem; }
+  .item-right { width: 100%; }
+  /* Awards ------------------------------------------------- */
+  .line-height { line-height: 4rem; margin-bottom: 5vh; }
+  .small-text { font-size: 1.1rem; }
+}
+
+/* Large Smartphone (Horizontal) */
+@media screen and (max-width: 850px) and (max-height: 500px) {
+  .about-content { top: 10vh; }
+  .align { text-align: left !important; }
+  .item-wrapper { display: block; margin-bottom: 5vh; }
+  .item { width: 100%; }
+  .item-subtitle { font-size: 1.7rem; }
+  .item-right { width: 100%; }
+  .main { font-size: 1.15rem; }
+}
+
+/* iPhone X */
+@media screen and (max-width: 375px) and (min-height: 700px) {
+  .small-text { font-size: .9rem; }
+}
+
+/* iPhone 6/7/8 */
+@media screen and (max-width: 375px) and (max-height: 699px) {
+  .about-content { top: 10vh; }
+  .education-content { top: 10vh; }
+  .skills-content { top: 10vh; }
+  .interests-content { top: 10vh; }
+  .awards-content { top: 10vh; }
+  .small-text { font-size: .9rem; }
+}

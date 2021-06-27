@@ -2,12 +2,61 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>JacintoDesignv12</title>
+  <title>Jacinto Design</title>
   <base href="/">
+  <meta name="theme-color" content="#000000">
+  <meta name="Description" content="Jacinto Design is an initiative to share design and development, featuring modern web projects that teach HTML, CSS, and Javascript fundamentals. ">
+  <meta name="Author" content="Jacinto Wong">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/x-icon" href="./assets/icons/favicon.ico">
+  <!-- Custom Styling -->
+  <style>
+    /* Works on Firefox */
+    * {
+      scrollbar-width: thin;
+      scrollbar-color: blue orange;
+    }
+
+    /* Works on Chrome, Edge, and Safari */
+    *::-webkit-scrollbar {
+      width: 15px;
+    }
+
+    *::-webkit-scrollbar-track {
+      background: rgb(0, 0, 0);
+    }
+
+    *::-webkit-scrollbar-thumb {
+      background-color: rgb(59, 59, 59);
+      border-radius: 20px;
+      border: 3px solid rgb(0, 0, 0);
+    }
+  </style>
+  <style>*, ::after, ::before {box-sizing: border-box;}</style>
+  <style>html, body { margin: 0; scroll-behavior: smooth; }</style>
+  <!-- Social Media Tags -->
+  <meta property="og:title" content="Jacinto Design">
+  <meta property="og:description" content="Progressive Web App Portfolio">
+  <meta property="og:image" content="https://raw.githubusercontent.com/JacintoDesign/jacinto-design-pwa/master/src/assets/img/facebook-share.png">
+  <meta property="og:url" content="https://jacinto.design">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- PWA Compat -->
+  <link rel="manifest" href="manifest.webmanifest" />
+  <!-- <script async src="https://cdn.jsdelivr.net/npm/pwacompat@2.0.8/pwacompat.min.js"
+    integrity="sha384-uONtBTCBzHKF84F6XvyC8S0gL8HTkAPeCyBNvfLfsqHh+Kd6s/kaS4BdmNQ5ktp1"
+    crossorigin="anonymous"></script>  -->
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111285001-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-111285001-1');
+  </script>  -->
 </head>
 <body>
   <app-root></app-root>
+  <noscript>Please enable JavaScript to continue using this application.</noscript>
 </body>
 </html>
