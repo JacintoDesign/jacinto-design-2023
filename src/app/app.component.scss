@@ -58,6 +58,7 @@ video {
 .social-icons {
   position: absolute;
   top: 80%;
+  z-index: 2000;
 }
 .social-icons fa-icon {
   font-size: 5rem;
