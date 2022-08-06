@@ -2,12 +2,39 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>JacintoDesign2022</title>
+  <title>Jacinto Design</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="Description" content="Jacinto Design is an initiative to share design and development, featuring modern web projects that teach HTML, CSS, and Javascript fundamentals. ">
+  <meta name="Author" content="Jacinto Wong">
+  <meta name="theme-color" content="#000000">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="manifest" href="manifest.webmanifest">
-  <meta name="theme-color" content="#1976d2">
+    <!-- Custom Styling -->
+    <style>
+      /* Works on Firefox */
+      * {
+        scrollbar-width: thin;
+        scrollbar-color: blue orange;
+      }
+  
+      /* Works on Chrome, Edge, and Safari */
+      *::-webkit-scrollbar {
+        width: 15px;
+      }
+  
+      *::-webkit-scrollbar-track {
+        background: rgb(0, 0, 0);
+      }
+  
+      *::-webkit-scrollbar-thumb {
+        background-color: rgb(59, 59, 59);
+        border-radius: 20px;
+        border: 3px solid rgb(0, 0, 0);
+      }
+    </style>
+    <style>*, ::after, ::before {box-sizing: border-box;}</style>
+    <style>html, body { margin: 0; scroll-behavior: smooth; }</style>
 </head>
 <body>
   <app-root></app-root>
