@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "jacinto-design-2022": {
+    "jacinto-design-2023": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -20,7 +20,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/jacinto-design-2022",
+            "outputPath": "dist/jacinto-design-2023",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -75,10 +75,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "jacinto-design-2022:build:production"
+              "browserTarget": "jacinto-design-2023:build:production"
             },
             "development": {
-              "browserTarget": "jacinto-design-2022:build:development"
+              "browserTarget": "jacinto-design-2023:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -86,7 +86,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "jacinto-design-2022:build"
+            "browserTarget": "jacinto-design-2023:build"
           }
         },
         "test": {
