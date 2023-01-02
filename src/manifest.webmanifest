@@ -1,8 +1,8 @@
 {
-  "name": "jacinto-design-2022",
-  "short_name": "jacinto-design-2022",
-  "theme_color": "#1976d2",
-  "background_color": "#fafafa",
+  "name": "Jacinto Design",
+  "short_name": "Jacinto",
+  "theme_color": "#fff",
+  "background_color": "#000",
   "display": "standalone",
   "scope": "./",
   "start_url": "./",
