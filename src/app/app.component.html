@@ -1,8 +1,211 @@
-<div class="wrapper">
-  <section id="home">
-    <div class="page-title">
-      <h1>Jacinto Design</h1>
-      <h2>New Website Coming Soon</h2>
-    </div>
-  </section>
+ <!-- Navigation -->
+ <div class="nav-wrapper">
+  <div class="menu-icon" (click)="toggleMenu()">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+  </div>
+  <nav id="nav">
+    <ul>
+        <li><a href="#home" (click)="hideMenu()">Home</a></li>
+        <li><a href="#about" (click)="hideMenu()">About</a></li>
+        <li><a href="#projects" (click)="hideMenu()">Projects</a></li>
+        <li><a href="#contact" (click)="hideMenu()">Contact</a></li>
+    </ul>
+  </nav>
 </div>
+<!-- Main Content -->
+<main class="main-container">
+  <!-- Home Section -->
+  <section id="home">
+      <div class="slideshow">
+          <img src="../assets/img/slideshow/cyberpunk1.jpg" alt="AI Generated: Cyberpunk futuristic city at midnight with bright pink moon" class="slide active">
+          <img src="../assets/img/slideshow/cyberpunk2.jpg" alt="AI Generated: Cyberpunk futuristic city in the evening, skyscapers in the distance" class="slide" loading="lazy">
+          <img src="../assets/img/slideshow/cyberpunk3.jpg" alt="AI Generated: Cyberpunk futuristic city at dawn, skyscapers in the distance" class="slide" loading="lazy">
+          <img src="../assets/img/slideshow/cyberpunk4.jpg" alt="AI Generated: Cyberpunk futuristic city street market at night with people shopping" class="slide" loading="lazy">
+          <img src="../assets/img/slideshow/cyberpunk5.jpg" alt="AI Generated: Cyberpunk futuristic city at dawn, spaceship restaurant in foreground" class="slide" loading="lazy">
+      </div>
+      <div class="page-title">
+          <h1>Jacinto Design</h1>
+      </div>
+      <div class="mouse"></div>
+  </section>
+  <!-- About Section -->
+  <section id="about">
+      <div class="about-container">
+          <div class="section-title">
+            <h2>About</h2>
+          </div>
+          <div class="about-grid">
+              <div class="box1">
+                <a href="https://zerotomastery.io/courses/javascript-projects/?affcode=441520_7lacw2wa" target="_blank">
+                  <div class="text-box">
+                    <h3>Zero To Mastery</h3>
+                    <p>                      
+                      Hi there! I'm Jacinto, a Senior Developer at the Canadian Broadcasting Corporation with a diverse background that includes 5 years of experience as a teacher in both Canada and South Korea. My journey into the world of technology started at a young age when I built my first computer at 12 and delved into design software at 16.
+                    </p>
+                    <p>
+                      Currently, I wear the hat of an instructor at the Zero to Mastery Academy. In this role, I leverage my artistic and critical thinking skills to craft high-quality projects that significantly enhance students' portfolios, giving them a head start in their web development careers.
+                    </p>
+                  </div>
+                </a>
+              </div>
+              <div class="icon-box box2">
+                  <i class="fa-solid fa-code"></i>
+                  <h3>Quality Code</h3>
+                  <p>Projects written with clear, concise and up-to-date code.</p>
+              </div>
+              <div class="icon-box box3">
+                  <i class="fa-solid fa-wand-magic-sparkles"></i>
+                  <h3>CSS Wizard</h3>
+                  <p>Coming from a graphic design background, extra attention paid to styling.</p>
+              </div>
+              <div class="icon-box box4">
+                  <i class="fa-solid fa-trophy"></i>
+                  <h3>Award Winning</h3>
+                  <p>Winner of multiple hackathon competitions.</p>         
+              </div>
+              <div class="icon-box box5">
+                  <i class="fa-solid fa-infinity"></i>
+                  <h3>Infinite Ideas</h3>
+                  <p>Advanced CSS course contains over 100 code challenges and projects.</p>
+              </div>
+              <div class="box6">
+                  <a href="https://zerotomastery.io/courses/javascript-projects/?affcode=441520_7lacw2wa" target="_blank">
+                    <div class="text-box">
+                      <h3>Check Out My Courses!</h3>
+                      <p>
+                        Understanding that traditional coding bootcamps and formal education might be too time-consuming or expensive for many, I strive to go above and beyond in creating courses that are not only affordable but also beginner-friendly. My goal is to equip you with the fundamentals necessary to confidently build projects independently and land that dream job.
+                      </p>
+                      <p>
+                        As a self-taught developer, I started with zero knowledge and managed to secure a Senior Developer position after just 4 months of working through online courses. Having walked in your shoes, I know it's entirely possible to upgrade your skills and transition careers without breaking the bank or spending excessive time. Now, I'm dedicated to helping individuals like you make that transformation. Let's embark on this journey together!
+                      </p>
+                  </div>
+                  </a>
+              </div>
+          </div>
+      </div>
+  </section>
+  <!-- Projects Section -->
+  <!-- Mockup Image by vector_corp on Freepik -->
+  <section id="projects">
+      <div class="projects-container">
+          <div class="section-title">
+              <h2>Projects</h2>
+          </div>
+          <div class="projects-grid">
+
+              <div class="grid-item">
+                  <div class="mockup">
+                      <a href="https://jacintodesign.github.io/calculator/" target="_blank">
+                          <img src="../assets/img/projects/calculator.png" alt="Calculator Project" loading="lazy">
+                      </a>
+                  </div>
+                  <div class="link-container">
+                      <a href="https://github.com/JacintoDesign/calculator" class="github-link" target="_blank">Github</a>
+                      <a href="https://jacintodesign.github.io/calculator/" class="live-link" target="_blank">Live Project</a>
+                  </div>
+              </div>
+
+              <div class="grid-item">
+                  <div class="mockup">
+                      <a href="https://jacintodesign.github.io/joke-teller/" target="_blank">
+                          <img src="../assets/img/projects/joke.png" alt="Joke Teller Project" loading="lazy">
+                      </a>           
+                  </div>
+                  <div class="link-container">
+                      <a href="https://github.com/JacintoDesign/joke-teller" class="github-link" target="_blank">Github</a>
+                      <a href="https://jacintodesign.github.io/joke-teller/" class="live-link" target="_blank">Live Project</a>
+                  </div>
+              </div>
+
+              <div class="grid-item">
+                  <div class="mockup">
+                      <a href="https://jacintodesign.github.io/music-player/" target="_blank">
+                          <img src="../assets/img/projects/music.png" alt="Music Player Project" loading="lazy">
+                      </a>
+                  </div>
+                  <div class="link-container">
+                      <a href="https://github.com/JacintoDesign/music-player" class="github-link" target="_blank">Github</a>
+                      <a href="https://jacintodesign.github.io/music-player/" class="live-link" target="_blank">Live Project</a>
+                  </div>
+              </div>                    
+
+              <div class="grid-item">
+                  <div class="mockup">
+                      <a href="https://jacintodesign.github.io/quote-generator/" target="_blank">
+                          <img src="../assets/img/projects/quote.png" alt="Quote Generator Project" loading="lazy">
+                      </a>
+                  </div>
+                  <div class="link-container">
+                      <a href="https://github.com/JacintoDesign/quote-generator" class="github-link" target="_blank">Github</a>
+                      <a href="https://jacintodesign.github.io/quote-generator/" class="live-link" target="_blank">Live Project</a>
+                  </div>
+              </div>                    
+
+              <div class="grid-item">
+                  <div class="mockup">
+                      <a href="https://jacintodesign.github.io/bookmark-app/" target="_blank">
+                          <img src="../assets/img/projects/bookmark.png" alt="Bookmark Project" loading="lazy">
+                      </a>
+                  </div>
+                  <div class="link-container">
+                      <a href="https://github.com/JacintoDesign/bookmark-app" class="github-link" target="_blank">Github</a>
+                      <a href="https://jacintodesign.github.io/bookmark-app/" class="live-link" target="_blank">Live Project</a>
+                  </div>
+              </div>                    
+
+              <div class="grid-item">
+                  <div class="mockup">
+                      <a href="https://jacintodesign.github.io/drag-and-drop/" target="_blank">
+                          <img src="../assets/img/projects/dragdrop.png" alt="Drag and Drop Project" loading="lazy">
+                      </a>
+                  </div>
+                  <div class="link-container">
+                      <a href="https://github.com/JacintoDesign/drag-and-drop" class="github-link" target="_blank">Github</a>
+                      <a href="https://jacintodesign.github.io/drag-and-drop/" class="live-link" target="_blank">Live Project</a>
+                  </div>
+              </div>
+              
+          </div>
+      </div>
+  </section>
+  <!-- Contact Section -->
+  <section id="contact">
+      <div class="contact-container">
+          <!-- Title -->
+          <div class="section-title">
+              <h2>Contact</h2>
+          </div>
+          <!-- Banner -->
+          <a href="mailto:email@example.com" class="banner-link">
+              <div class="banner">
+                  <div class="banner-content" id="bannerContent"></div>
+              </div>
+          </a>                
+      </div>
+      <!-- Footer -->
+      <footer>
+          <!-- Social Media -->
+          <div class="social-media-icons">
+              <a href="https://www.facebook.com/JacintoDesignCourses/" target="_blank" aria-label="Follow me on Facebook" title="Facebook">
+                  <i class="fa-brands fa-facebook"></i>
+              </a>             
+              <a href="https://www.youtube.com/@ZeroToMastery" target="_blank" aria-label="Subscribe to the ZTM YouTube channel" title="Youtube">
+                <i class="fa-brands fa-youtube"></i>
+              </a>
+              <a href="https://twitter.com/mynameisjacinto" target="_blank" aria-label="Follow me on Twitter (X)" title="Twitter (X)">
+                  <i class="fa-brands fa-x-twitter"></i>
+              </a>                    
+              <a href="https://www.linkedin.com/in/jacintowong/" target="_blank" aria-label="Follow me on LinkedIn" title="LinkedIn">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>              
+              <a href="https://github.com/JacintoDesign" target="_blank" aria-label="Follow me on Github" title="Github">
+                  <i class="fa-brands fa-github"></i>
+              </a> 
+          </div>
+          <!-- Footer Text -->
+          <small>&copy; 2024 Jacinto Design. All rights reserved.</small>
+      </footer>
+  </section>
+</main>
