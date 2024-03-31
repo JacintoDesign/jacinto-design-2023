@@ -54,6 +54,26 @@ export class AppComponent implements OnInit, AfterViewInit {
   ngAfterViewInit() {
     this.images = this.elRef.nativeElement.querySelectorAll('.slide');
     setInterval(() => this.switchImage(), 5000);
+  
+    const videoContainer = document.getElementById('videoContainer');
+    if (videoContainer) {
+      const video = videoContainer.querySelector('video');
+  
+      if (video) {
+        video.addEventListener('loadedmetadata', () => {
+          window.addEventListener('scroll', () => {
+            const rect = videoContainer.getBoundingClientRect();
+            if (rect.top < window.innerHeight && rect.bottom >= 0) {
+              video.play();
+            }
+          });
+          
+          videoContainer.classList.add('loaded');
+          videoContainer.style.height = video.offsetHeight + 'px';
+          videoContainer.style.display = 'block';
+        });
+      }
+    }
   }
 
   switchImage() {
@@ -78,4 +98,5 @@ export class AppComponent implements OnInit, AfterViewInit {
       }
     }
   }
+  
 }
